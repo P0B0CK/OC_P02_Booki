@@ -1,8 +1,21 @@
-html, body
+html
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+body
+{
+    width: 95vw;
+}
+
+header
 {
     width: 100vw;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+}
+
+main
+{
+    width: 95vw;
 }
 
 /* GESTION DES TEXTES & TITRES */
@@ -39,7 +52,7 @@ nav
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 30px 0 30px;
+    margin: 0 8vw;
     height: 52px;
 }
 
@@ -446,17 +459,20 @@ footer
     display: flex;
 }
 
-
-
-
 /* ____________________ */
 /* ==================== */
 /*   RESPONSIVE MOBILE  */
 /* ==================== */
 /* ____________________ */
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 768px)
 {
+    html, body
+    {
+        width: 100vw;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+    }
     /* Header mobile */
 
     nav
@@ -562,7 +578,7 @@ footer
 /* ____________________ */
 
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 992px)
 {
 
     /* SWITCH RECHERCHE TEXTE TO ICON */
@@ -687,6 +703,4 @@ footer
     {
         color: #e0e0e0;
     }
-
-
 }
