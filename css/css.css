@@ -3,7 +3,7 @@ html, body
     width: 100vw;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-}&
+}
 
 h3
 {
@@ -543,7 +543,7 @@ footer
     {
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center;&
+        align-items: center;
     }
 
     .vignettes
