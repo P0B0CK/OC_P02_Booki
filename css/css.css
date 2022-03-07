@@ -5,6 +5,19 @@ html, body
     font-family: 'Raleway', sans-serif;
 }
 
+/* GESTION DES TEXTES & TITRES */
+p, a
+{
+    color: black;
+    font-size: min(5vw, 16px);
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
 h3
 {
     font-size: min(5vw, 22px);
@@ -14,21 +27,9 @@ h3
 h4
 {
     padding: 2% 2% 2% 5%;
-    font-size: min(2vw, 20px);
+    font-size: min(5vw, 20px);
     margin: 0;
     text-align: left;
-}
-
-p
-{
-    color: black;
-    font-size: min(3vw, 18px);
-}
-
-a
-{
-    text-decoration: none;
-    color: black;
 }
 
 /* header */
