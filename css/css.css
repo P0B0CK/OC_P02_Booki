@@ -1,0 +1,691 @@
+html, body
+{
+    width: 100vw;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}&
+
+h3
+{
+    font-size: min(5vw, 22px);
+    margin: 3vh;
+}
+
+h4
+{
+    padding: 2% 2% 2% 5%;
+    font-size: min(2vw, 20px);
+    margin: 0;
+    text-align: left;
+}
+
+p
+{
+    color: black;
+    font-size: min(3vw, 18px);
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px 0 30px;
+    height: 52px;
+}
+
+#logo
+{
+    width: 95.5px;
+    height: 45px;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navButton
+{
+    height: 20px;
+    width: 150px;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+}
+
+li.navButton:hover
+{
+    border-top: #0065FC 2px solid;
+}
+
+/* ____SECTION RECHERCHE_____ */
+
+/* Search Bar */
+
+.search
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.searchBar
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 5px 0 5px;
+}
+
+.iconMap
+{
+    background-color: #F2F2F2;
+    padding: 15px 15px 15px 15px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+.searchMap
+{
+
+    border-top: 1px #F2F2F2;
+    border-bottom: 1px#F2F2F2;
+    padding: 15px 0px 15px 0px;
+    font: bold;
+}
+
+input
+{
+    border: none;
+    border-top: 2px #F2F2F2 solid;
+    border-bottom: 2px #F2F2F2 solid;
+    padding: 15px 0px 15px 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.buttonSearch
+{
+    background-color: #0065FC;
+    color: #F2F2F2;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 15px 15px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.iconHidden
+{
+    display: none;
+}
+
+.invisible
+{
+    visibility: hidden;
+}
+
+.textHidden
+{
+    display: contents;
+}
+
+/* Infobulle */
+
+.buttonInfoBulle
+{
+    border: 2px #F2F2F2 solid;
+    background-color: #FFFFFF;
+    height: 25px; 
+    width: 25px;
+    border-radius:25px;
+    padding: 2px 0 0 0;
+}
+
+.BlueInfobulle
+{
+    color: #0065FC;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
+/* ____FILTRES_____ */
+
+.alignFilters
+{
+    display: flex;
+    align-items: center;
+    margin: 0 25px 0 25px;
+}
+
+.textFilters
+{
+    font-weight: bold;
+    padding-left: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttonFilters
+{
+    max-height: 52px;
+    border: #f2f2f2 2px solid;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    padding: 0 12px 0 0px;
+}
+
+.buttonFilters:hover
+{
+    max-height: 52px;
+    border: #f2f2f2 2px solid;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    padding: 0 12px 0 0px;
+    color: #0065FC;
+}
+
+.blueIcons
+{
+    max-height: 56px;
+    max-width: 56px;
+    margin-left: -2px;
+    color: #0065FC;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding : 18px;
+}
+
+.blueIcons:hover
+{
+    margin-left: -2px;
+    color: #DEEBFF;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #0065FC;
+    border-radius: 25px;
+}
+
+.buttonFiltersCircle
+{
+    background-color: #DEEBFF;
+}
+
+
+/* Section Hebergement*/
+
+#hebergements
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hebergements
+{
+    width: 50vw;
+    background-color: #F2F2F2;
+    border-radius: 45px;
+    padding: 10px 25px;
+}
+
+.paddingTittle
+{
+    padding: 0 0 0 10px;
+}
+
+.popularity
+{
+    width: 30vw;
+    background-color: #F2F2F2;
+    border-radius: 45px;
+    padding: 10px 25px;
+}
+
+.galerie
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vignettes
+{
+    width: 30%;
+    margin: 1vh;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 10px #afafaf;
+}
+
+.imgVignettes
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 2%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.galerieColumn
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vignettesColumn
+{
+    width: 80%;
+    margin: 3vh 0;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    box-shadow: 0 1px 10px #afafaf;
+}
+
+.imgVignettesColumn
+{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2%;
+    width: 35%;
+    height: 130px;
+    object-fit: cover;
+}
+
+
+.textVignettes
+{
+    margin: 1% 0;
+    padding: 2% 2% 2% 5%;
+    font-size: 12px;
+}
+
+.notation
+{
+    padding: 2% 2% 5% 5%;
+    margin-top: 2vh;
+}
+
+.switchBlue
+{
+    color: #0065FC;
+}
+
+.switchGrey
+{
+    color: #e0e0e0;
+}
+
+/*Section ACTIVITES */
+
+.activities
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.galerieActivities
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.petitesVignettes
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.grandesVignettesActivities
+{
+    
+    border-radius: 20px;
+    box-shadow: 0 1px 10px #afafaf;
+    margin: 1% 4%;
+}
+
+.vignettesActivities
+{
+    
+    border-radius: 20px;
+    box-shadow: 0 1px 10px #afafaf;
+    margin: 4%;
+}
+
+.imgVignettesActivities
+{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: fill;
+}
+
+/*
+.activities
+{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.galerieActivities
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.grandesVignettes
+{
+    width: 18vw;
+    max-height: 600px;
+    min-height: 400px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 10px #afafaf;
+}
+
+.petitesVignettes
+{
+    width: 18vw;
+    max-height: 600px;
+    min-height: 400px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 10px #afafaf;
+}
+
+.imgVignettesActivities
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+*/
+
+
+
+
+/* Pied de page */
+
+footer
+{
+    background-color: #F2F2F2;
+}
+
+.footerContainer
+{
+    display: flex;
+}
+
+
+
+
+/* ____________________ */
+/* ==================== */
+/*   RESPONSIVE MOBILE  */
+/* ==================== */
+/* ____________________ */
+
+@media screen and (max-width: 500px)
+{
+    /* Header mobile */
+
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 18px;
+    }
+
+    li.navButton
+    {
+        border-bottom: #F2F2F2 2px solid;
+    }
+
+    li.navButton:hover
+    {
+        border-top: none;
+        border-bottom: #0065FC 2px solid;
+    }
+
+    li.navButton:focus
+    {
+        color: #0065FC;
+        border-bottom: #0065FC 2px solid;
+    }
+
+    /*_____SEARCH MOBILE_____*/
+
+    .search
+    {
+        justify-content: center;
+    }
+
+    
+    /* _____FILTRES MOBILES_____*/
+
+        .alignFilters
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 25px 0 25px;
+        cursor: pointer;
+    }
+
+    /* SWITCH RECHERCHE TEXTE TO ICON */
+    .invisible
+    {
+        visibility: visible;
+    }
+
+    .textHidden
+    {
+        display: none;
+    }
+
+    /* --- MAIN MOBILE --- */
+
+    .recherche
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popularity
+    {
+        background: #FFFFFF;
+    }
+
+    /* SECTION HEBERGEMENT */
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galerie
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;&
+    }
+
+    .vignettes
+    {
+        width: 90vw;
+    }
+
+}
+
+
+/* ____________________ */
+/* ==================== */
+/* RESPONSIVE TABLETTE  */
+/* ==================== */
+/* ____________________ */
+
+
+@media screen and (max-width: 768px)
+{
+
+    /* SWITCH RECHERCHE TEXTE TO ICON */
+    .invisible
+    {
+        visibility: visible;
+    }
+
+    .textHidden
+    {
+        display: none;
+    }
+
+    /* SECTION HEBERGEMENT */
+    
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hebergements
+    {
+        width: 100vw;
+        border-radius: 0%;
+    }
+
+    .popularity
+    {
+        width: 100vw;
+        border-radius: 0%;
+        background-color: #ffffff;
+    }
+
+    .galerieActivities
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        border-radius: 0%;
+        background-color: #ffffff;
+    }
+
+    .galerie
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .vignettes
+    {
+        margin: 1vh;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 10px #afafaf;
+    }
+
+    .imgVignettes
+    {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 2%;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    .galerieColumn
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .vignettesColumn
+    {
+        width: 80%;
+        margin: 3vh 0;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        box-shadow: 0 1px 10px #afafaf;
+    }
+
+    .imgVignettesColumn
+    {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 2%;
+        width: 35%;
+        height: 130px;
+        object-fit: cover;
+    }
+
+
+    .textVignettes
+    {
+        margin: 1% 0;
+        padding: 2% 2% 2% 5%;
+        font-size: 12px;
+    }
+
+    .notation
+    {
+        padding: 2% 2% 5% 5%;
+        margin-top: 2vh;
+    }
+
+    .switchBlue
+    {
+        color: #0065FC;
+    }
+
+    .switchGrey
+    {
+        color: #e0e0e0;
+    }
+
+
+}
