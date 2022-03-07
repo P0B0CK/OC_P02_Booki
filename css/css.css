@@ -90,8 +90,6 @@ li.navButton:hover
     padding: 5%;
 }
 
-
-
 /* Search Bar */
 
 .search
@@ -187,12 +185,14 @@ input
 .alignFilters
 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 25px 0 25px;
 }
 
 .textFilters
 {
+    font-size: 12px;
     font-weight: bold;
     padding-left: 20px;
     justify-content: center;
@@ -201,6 +201,7 @@ input
 
 .buttonFilters
 {
+    width: 180px;
     max-height: 52px;
     border: #f2f2f2 2px solid;
     border-top-right-radius: 45px;
@@ -367,8 +368,10 @@ input
 
 .activities
 {
+    width : 85vw;
     display: flex;
     flex-flow: column nowrap;
+    padding: 0 0 0 3vw;
 }
 
 .galerieActivities
@@ -394,7 +397,6 @@ input
 
 .vignettesActivities
 {
-    
     border-radius: 20px;
     box-shadow: 0 1px 10px #afafaf;
     margin: 4%;
@@ -519,6 +521,7 @@ footer
         .alignFilters
     {
         display: flex;
+        flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         margin: 0 25px 0 25px;
