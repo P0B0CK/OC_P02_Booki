@@ -34,7 +34,6 @@ a
 h3
 {
     font-size: min(5vw, 22px);
-    margin: 3vh;
 }
 
 h4
@@ -45,7 +44,7 @@ h4
     text-align: left;
 }
 
-/* header */
+/* HEADER */
 
 nav
 {
@@ -83,7 +82,15 @@ li.navButton:hover
     border-top: #0065FC 2px solid;
 }
 
-/* ____SECTION RECHERCHE_____ */
+/* SECTION RECHERCHE */
+
+#recherche
+{
+    width: 90vw;
+    padding: 5%;
+}
+
+
 
 /* Search Bar */
 
