@@ -11,6 +11,12 @@ img{
 html
 {
     font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2;
+}
+
+header, body
+{
+    background-color: #FFFFFF;
 }
 
 /*_____________________________*/
@@ -418,51 +424,52 @@ input
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-/*
-.grandesVignettes
-{
-    border-radius: 20px;
-    box-shadow: 0 1px 10px #afafaf;
 }
-
-.grandesVignettesImg
-{
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: fill;
-}
-
-.petitesVignettes
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.vignettesActivities
-{
-    border-radius: 20px;
-    box-shadow: 0 1px 10px #afafaf;
-    margin: 4%;
-}
-*/
 
 /* Pied de page */
-/*
+
 footer
 {
     background-color: #F2F2F2;
+    padding: 2%;
 }
 
 .footerContainer
 {
+    width: 95%;
     display: flex;
 }
-*/
+
+.footerElement
+{
+    width: 35%;
+    margin-right: 10%;
+}
+
+.footerUl
+{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 0 0;
+}
+
+.footerLi
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footerNoPadding
+{
+    padding: 0;
+}
+
 /* ____________________ */
 /* ==================== */
 /*   RESPONSIVE MOBILE  */
 /* ==================== */
 /* ____________________ */
+
 /*
 @media screen and (max-width: 768px)
 {
