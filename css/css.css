@@ -387,14 +387,49 @@ input
 
 .galerieActivities
 {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
+.activites
+{
+    border-radius: 20px;
+    box-shadow: 0 1px 10px #afafaf;
+    margin: 10px;
+}
+
+.activitesImg
+{
+    height: 800px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.activitesImgSmall
+{
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activitesSplit
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+/*
 .grandesVignettes
 {
     border-radius: 20px;
     box-shadow: 0 1px 10px #afafaf;
+}
+
+.grandesVignettesImg
+{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: fill;
 }
 
 .petitesVignettes
@@ -409,13 +444,7 @@ input
     box-shadow: 0 1px 10px #afafaf;
     margin: 4%;
 }
-
-.imgVignettesActivities
-{
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: fill;
-}
+*/
 
 /* Pied de page */
 /*
