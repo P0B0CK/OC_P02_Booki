@@ -35,7 +35,7 @@ a
 
 h3
 {
-    padding: 2% 2% 2% 5%;
+    padding: 5% 5%;
     margin: 0;
     text-align: left;
 }
@@ -324,7 +324,7 @@ input
 .vignettes
 {
     width: 30%;
-    margin: 1vh;
+    margin: 1%;
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
@@ -382,7 +382,7 @@ input
 .notation
 {
     padding: 0 5% 5%;
-    margin-top: 2vh;
+    margin-top: 2%;
 }
 
 .switchBlue
@@ -413,8 +413,6 @@ border: red 3px solid;
 
 .galerieActivities
 {   
-    width: 100%;
-    height: 600px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -422,7 +420,6 @@ border: red 3px solid;
 
 .columnGalerie
 {   
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -450,7 +447,7 @@ img.activitesImg
 img.activitesImgSmall
 {
     height: 84%;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
