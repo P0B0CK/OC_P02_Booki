@@ -294,6 +294,25 @@ input
     border-radius: 45px;
     margin-left: 2%;
 }
+.arrowPosition
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+
+.arrowPop
+{
+    border-left: 3px black solid;
+    border-bottom: 3px black solid;
+    padding: 1px;
+}
+
+.descriptionText
+{
+    width: 80%;
+}
 
 .galerie
 {
@@ -318,7 +337,7 @@ input
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 2%;
-    height: 130px;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -334,7 +353,7 @@ input
 .vignettesColumn
 {
     width: 80%;
-    margin: 3vh 0;
+    margin: 3% 0;
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
@@ -356,13 +375,13 @@ input
 .textVignettes
 {
     margin: 1% 0;
-    padding: 2% 2% 2% 5%;
+    padding: 0 5%;
     font-size: 12px;
 }
 
 .notation
 {
-    padding: 2% 2% 5% 5%;
+    padding: 0 5% 5%;
     margin-top: 2vh;
 }
 
@@ -694,6 +713,11 @@ footer
     {
         padding: 10%;
     }
+
+    .descriptionText
+    {
+        width: 95%;
+    }
 }
 
 
@@ -806,19 +830,6 @@ footer
         height: 130px;
         padding: 4px;
         object-fit: cover;
-    }
-
-    .textVignettes
-    {
-        margin: 1% 0;
-        padding: 2% 2% 2% 5%;
-        font-size: 12px;
-    }
-
-    .notation
-    {
-        padding: 2% 2% 5% 5%;
-        margin-top: 2vh;
     }
 
     .switchBlue
