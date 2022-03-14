@@ -1,7 +1,3 @@
-img{
-    max-width: 400px;
-}
-
 /*_____________________________*/
 /*_____________________________*/
 /*          PRINCIPAL          */
@@ -383,16 +379,13 @@ input
 /*Section ACTIVITES */
 
 /* 
-
 CHECKER BACKGROUND CODE
 
 background-color: grey;
 border: red 3px solid;
-
 */
 .activities
 {
-    width : 95%;
     display: flex;
     flex-flow: column nowrap;
     padding: 3% 2%;
@@ -400,39 +393,58 @@ border: red 3px solid;
 
 
 .galerieActivities
-{
+{   
     width: 100%;
+    height: 600px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .columnGalerie
-{
+{   
+    height: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    box-shadow: 0 1px 10px #afafaf;
-    background-color: rgb(168, 113, 113);
-    border: rgb(81, 0, 255) 3px solid;
 }
 
 .columnSplitGalerie
 {
-    max-width: 100%;
-    margin: auto;
+    height: 50%;
+}
+
+.vignetteGalerie
+{
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0 1px 10px #afafaf;
-    background-color: rgb(113, 168, 125);
-    border: rgb(255, 0, 149) 3px solid;
 }
 
 img.activitesImg
 {
-    width: 100%;
+    height: 92%;
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
-    object-fit: contain;
-    background-color: grey;
+}
+
+img.activitesImgSmall
+{
+    height: 84%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.marginTop
+{
+    margin-top: 10%;
+}
+
+.marginRight
+{
+    
+    margin-right: 2%;
 }
 
 /*
@@ -516,23 +528,23 @@ footer
 /* ==================== */
 /* ____________________ */
 
-/*
+
 @media screen and (max-width: 768px)
 {
     html, body
     {
-        width: 100vw;
+        width: 100%;
         margin: 0;
         font-family: 'Raleway', sans-serif;
-    }*
-/*
+    }
+
     /* Header mobile */
-/*
+
     nav
     {
         display: flex;
         flex-direction: column;
-        margin: 18px;
+        margin-bottom: 30px;
     }
 
     li.navButton
@@ -553,17 +565,15 @@ footer
     }
 
     /*_____SEARCH MOBILE_____*/
-/*
+
     .search
     {
         justify-content: center;
     }
-*/
 
 
-    
     /* _____FILTRES MOBILES_____*/
-/*
+
         .alignFilters
     {
         display: flex;
@@ -573,9 +583,9 @@ footer
         margin: 0 25px 0 25px;
         cursor: pointer;
     }
-*/
+
     /* SWITCH RECHERCHE TEXTE TO ICON */
-/*
+
     .buttonSearch i
     {
         display: block;
@@ -585,9 +595,9 @@ footer
     {
         display: none;
     }
-*/
+
     /* --- MAIN MOBILE --- */
-/*
+
     .recherche
     {
         display: flex;
@@ -598,21 +608,30 @@ footer
     #hebergements
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .hebergements
+    {
+        width: 100%;
+        border-radius: 0;
+        background-color: #FFFFFF;
     }
 
     .popularity
     {
-        background: #FFFFFF;
+        width: 100%;
+        margin: 0%;
+        background: #F2F2F2;
+        border-radius: 0;
     }
-*/
+
+    
+
     /* SECTION HEBERGEMENT */
-/*
-    #hebergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
 
     .galerie
     {
@@ -621,13 +640,66 @@ footer
         align-items: center;
     }
 
-    .vignettes
+    .vignettesColumn
     {
-        width: 90vw;
+        width: 95%;
     }
 
+    .vignettes
+    {
+        width: 90%;
+    }
+
+    img.imgVignettes
+    {
+        height: 150px;
+        object-fit: cover;
+        object-position: center right;
+    }
+
+    p.textVignettes
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* SECTION ACTIVITE */
+
+    .activities
+    {
+    }
+
+    .galerieActivities
+    {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .vignetteGalerie
+    {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    img.activitesImg, img.activitesImgSmall
+    {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .marginTop
+    {
+        margin-top: 0;
+    }
+
+    h3.titresVignetteGalerie
+    {
+        padding: 10%;
+    }
 }
-/*
+
 
 /* ____________________ */
 /* ==================== */
@@ -640,7 +712,6 @@ footer
 {
 
     /* SWITCH RECHERCHE TEXTE TO ICON */
-/* 
     .buttonSearch i
     {
         display: block;
@@ -650,27 +721,29 @@ footer
     {
         display: none;
     }
-*/
     /* SECTION HEBERGEMENT */
-/*   
+
     #hebergements
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-around;
+        padding: 0;
     }
 
     .hebergements
     {
-        width: 100vw;
+        width: 100%;
         border-radius: 0%;
+        background-color: #FFFFFF;
     }
 
     .popularity
     {
         width: 100vw;
         border-radius: 0%;
-        background-color: #ffffff;
+        margin: 0;
+        background-color: #f2f2f2;
     }
 
     .galerieActivities
@@ -720,8 +793,8 @@ footer
 
     .vignettesColumn
     {
-        width: 80%;
-        margin: 3vh 0;
+        width: 95%;
+        margin: 2% 0;
         background-color: #FFFFFF;
         border-radius: 20px;
         display: flex;
@@ -738,7 +811,6 @@ footer
         height: 130px;
         object-fit: cover;
     }
-
 
     .textVignettes
     {
@@ -762,5 +834,36 @@ footer
     {
         color: #e0e0e0;
     }
+
+    /* SECTION ACTIVITE */
+
+    .galerieActivities
+    {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .vignetteGalerie
+    {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    img.activitesImg, img.activitesImgSmall
+    {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+    
+    .marginTop
+    {
+        margin-top: 0;
+    }
+    
+    h3.titresVignetteGalerie
+    {
+        padding: 10%;
+    }
 }
-*/
