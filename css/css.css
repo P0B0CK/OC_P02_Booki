@@ -4,6 +4,13 @@
 /*_____________________________*/
 /*_____________________________*/
 
+/* 
+CHECKER BACKGROUND CODE
+
+background-color: grey;
+border: red 3px solid;
+*/
+
 html
 {
     font-family: 'Raleway', sans-serif;
@@ -24,7 +31,7 @@ header, body
 p, a
 {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a
@@ -35,9 +42,19 @@ a
 
 h3
 {
-    padding: 5% 5%;
+    padding: 5px 20px;
     margin: 0;
     text-align: left;
+}
+
+.fontBold
+{
+    font-weight: bold;
+}
+
+.linkSurvol:hover
+{
+    color: #0065FC;
 }
 
 /*_____________________________*/
@@ -72,7 +89,7 @@ nav ul
 {
     height: 20px;
     width: 150px;
-    padding: 15px 5px 15px 5px;
+    padding: 15px 5px;
     text-align: center;
 }
 
@@ -89,7 +106,7 @@ li.navButton:hover
 
 #recherche
 {
-    padding: 1% 2% 0 2%;
+    padding: 25px;
 }
 
 /* SEARCH BAR */
@@ -156,11 +173,6 @@ input
     display: none;
 }
 
-.invisible
-{
-    visibility: hidden;
-}
-
 .textHidden
 {
     display: contents;
@@ -192,75 +204,60 @@ input
 /*_____________________________*/
 /*_____________________________*/
 
-.alignFilters
+.filters
 {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 25px 0 25px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
 }
 
-.textFilters
+.filtersZone
 {
-    font-size: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
     font-weight: bold;
-    padding-left: 20px;
-    justify-content: center;
-    cursor: pointer;
 }
 
-.buttonFilters
-{
-    width: 180px;
-    max-height: 52px;
-    border: #f2f2f2 2px solid;
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
-    border-top-left-radius: 45px;
-    border-bottom-left-radius: 45px;
-    padding: 0 12px 0 0px;
-}
-
-.buttonFilters:hover
-{
-    max-height: 52px;
-    border: #f2f2f2 2px solid;
-    border-top-right-radius: 45px;
-    border-bottom-right-radius: 45px;
-    border-top-left-radius: 45px;
-    border-bottom-left-radius: 45px;
-    padding: 0 12px 0 0px;
-    color: #0065FC;
-}
-
-.blueIcons
-{
-    max-height: 56px;
-    max-width: 56px;
-    margin-left: -2px;
-    color: #0065FC;
-    text-align: center;
+.filtersButton
+{   
+    display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 15px 0 0;
+    margin: 10px;
+    border: #F2F2F2 solid 3px;
+    border-radius: 50px;
+    color: #0065FC;
     cursor: pointer;
+}
+
+
+li.filtersButton:hover
+{
+    color: #0065FC;
+    border: #DEEBFF solid 3px;
     background-color: #DEEBFF;
-    border-radius: 50%;
-    padding : 18px;
 }
 
-.blueIcons:hover
+.filtersButton:focus
 {
-    margin-left: -2px;
-    color: #DEEBFF;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    background-color: #0065FC;
-    border-radius: 25px;
+    color: #FFFFFF;
+    background-color: #DEEBFF;
 }
 
-.buttonFiltersCircle
+.filtersIcons
 {
     background-color: #DEEBFF;
+    border: 20px #DEEBFF solid;
+    border-radius: 45px;
+    margin: -2px;
+}
+
+.filtersLink
+{
+    padding-left: 15px;
 }
 
 /*_____________________________*/
@@ -271,7 +268,7 @@ input
 
 #hebergements
 {
-    padding: 0% 2%;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -279,17 +276,19 @@ input
 .hebergements
 {
     width: 70%;
+    padding: 25px;
     background-color: #F2F2F2;
     border-radius: 45px;
 }
 
 .paddingTittle
 {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 15px;
 }
 
 .popularity
 {
+    padding: 25px;
     background-color: #F2F2F2;
     border-radius: 45px;
     margin-left: 2%;
@@ -311,7 +310,10 @@ input
 
 .descriptionText
 {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 .galerie
@@ -319,25 +321,34 @@ input
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .vignettes
 {
     width: 30%;
-    margin: 1%;
+    height: 225px;
+    margin: 15px 0;
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    justify-content: flex-start;
     box-shadow: 0 1px 10px #afafaf;
+}
+
+.vignettes:hover
+{
+    box-shadow: 0 1px 10px #0065FC;
+    color: #0065fc;
+    cursor: pointer;
 }
 
 .imgVignettes
 {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    padding: 2%;
-    height: 150px;
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+    padding: 5px;
     object-fit: cover;
 }
 
@@ -352,13 +363,20 @@ input
 
 .vignettesColumn
 {
-    width: 80%;
-    margin: 3% 0;
+    width: 90%;
+    margin: 15px;
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
     flex-flow: row nowrap;
     box-shadow: 0 1px 10px #afafaf;
+}
+
+.vignettesColumn:hover
+{
+    box-shadow: 0 1px 10px #0065FC;
+    color: #0065fc;
+    cursor: pointer;
 }
 
 .imgVignettesColumn
@@ -374,15 +392,20 @@ input
 
 .textVignettes
 {
-    margin: 1% 0;
-    padding: 0 5%;
-    font-size: 12px;
+    padding: 5px 20px;
+    margin: 0;
+    font-size: 16px;
 }
 
 .notation
+{    
+    padding: 5px 20px 10px;
+}
+
+a.linkSet
 {
-    padding: 0 5% 5%;
-    margin-top: 2%;
+    font-weight: bold;
+    padding: 0 15px;
 }
 
 .switchBlue
@@ -395,19 +418,24 @@ input
     color: #e0e0e0;
 }
 
-/*Section ACTIVITES */
+/*_____________________________*/
+/*_____________________________*/
+/*      SECTION ACTIVITES      */
+/*_____________________________*/
+/*_____________________________*/
 
-/* 
-CHECKER BACKGROUND CODE
 
-background-color: grey;
-border: red 3px solid;
-*/
+
+#activities
+{
+    padding: 25px;
+}
+
 .activities
 {
     display: flex;
     flex-flow: column nowrap;
-    padding: 3% 2%;
+    margin-bottom: 50px;
 }
 
 
@@ -463,44 +491,11 @@ img.activitesImgSmall
     margin-right: 2%;
 }
 
-/*
-.activites
-{
-    max-width: 50%;
-    border-radius: 20px;
-    box-shadow: 0 1px 10px #afafaf;
-    margin: 10px;
-    background-color: grey;
-    border: rgb(0, 255, 34) 3px solid;
-}*/
-/*
-.activitesImg
-{
-    height: 800px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    background-color: grey;
-}
-
-.activitesImgSmall
-{
-    height: 300px;
-    border-radius: 20px 20px 0 0;
-}
-*/
-
-/*
-.activitesSplit
-{
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: grey;
-    border: rgb(255, 0, 234) 3px solid;
-}*/
-
-/* Pied de page */
+/*_____________________________*/
+/*_____________________________*/
+/*      SECTION FOOTER         */
+/*_____________________________*/
+/*_____________________________*/
 
 footer
 {
@@ -536,6 +531,11 @@ footer
 .footerNoPadding
 {
     padding: 0;
+}
+
+.footerLink:hover
+{
+    color: #0065FC;
 }
 
 /* ____________________ */
@@ -656,19 +656,27 @@ footer
         align-items: center;
     }
 
+    .galerieColumn
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
     .vignettesColumn
     {
-        width: 95%;
+        width: 90%;
     }
 
     .vignettes
     {
         width: 90%;
+        height: auto;
     }
 
     img.imgVignettes
     {
-        height: 150px;
+        height: 175px;
         object-fit: cover;
         object-position: center right;
     }
@@ -683,22 +691,20 @@ footer
 
     .galerieActivities
     {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
     }
 
     .vignetteGalerie
     {
-        height: 300px;
+        height: 250px;
         margin-bottom: 20px;
     }
 
     img.activitesImg, img.activitesImgSmall
     {
         width: 100%;
-        height: 70%;
+        height: 200px;
         object-fit: cover;
+        object-position: center;
     }
 
     .marginTop
@@ -714,6 +720,19 @@ footer
     .descriptionText
     {
         width: 95%;
+    }
+
+    .footerContainer
+    {
+        width: 95%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .footerElement
+    {
+        width: auto;
+        margin: 25px 0;
     }
 }
 
@@ -738,7 +757,13 @@ footer
     {
         display: none;
     }
-    /* SECTION HEBERGEMENT */
+
+/*_____________________________*/
+/*_____________________________*/
+/*          TABLETTE           */
+/*      SECTION HEBERGEMENT    */
+/*_____________________________*/
+/*_____________________________*/
 
     #hebergements
     {
@@ -751,26 +776,23 @@ footer
     .hebergements
     {
         width: 100%;
+        padding: 0;
         border-radius: 0%;
         background-color: #FFFFFF;
     }
 
     .popularity
     {
-        width: 100vw;
+        width: 100%;
         border-radius: 0%;
         margin: 0;
+        padding: 0;
         background-color: #f2f2f2;
     }
 
-    .galerieActivities
+    .marginRight
     {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        border-radius: 0%;
-        background-color: #ffffff;
+        margin-right: 0;
     }
 
     .galerie
@@ -782,7 +804,6 @@ footer
 
     .vignettes
     {
-        margin: 1vh;
         background-color: #FFFFFF;
         border-radius: 20px;
         display: flex;
@@ -794,7 +815,6 @@ footer
     {
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-        padding: 2%;
         height: 130px;
         object-fit: cover;
     }
@@ -811,7 +831,8 @@ footer
     .vignettesColumn
     {
         width: 95%;
-        margin: 2% 0;
+        margin: 10px 0;
+        margin: 0 0 25px 0;
         background-color: #FFFFFF;
         border-radius: 20px;
         display: flex;
@@ -839,35 +860,25 @@ footer
         color: #e0e0e0;
     }
 
-    /* SECTION ACTIVITE */
+/*_____________________________*/
+/*_____________________________*/
+/*          TABLETTE           */
+/*      SECTION ACTIVITIE      */
+/*_____________________________*/
+/*_____________________________*/
 
     .galerieActivities
     {
-        width: 100%;
-        height: 100%;
+        display: flex;
         flex-direction: column;
-    }
-    
-    .vignetteGalerie
-    {
-        height: 300px;
-        margin-bottom: 20px;
-    }
-    
-    img.activitesImg, img.activitesImgSmall
-    {
+        align-items: center;
         width: 100%;
-        height: 70%;
-        object-fit: cover;
+        border-radius: 0%;
+        background-color: #ffffff;
     }
-    
-    .marginTop
+
+    .columnGalerie
     {
-        margin-top: 0;
-    }
-    
-    h3.titresVignetteGalerie
-    {
-        padding: 10%;
+        width: 90%;
     }
 }
