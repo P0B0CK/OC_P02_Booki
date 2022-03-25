@@ -34,7 +34,7 @@
         <main>
             <section id="recherche">
                     <div class="recherche">
-                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <h2 class="marginLineMid">Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <form>
@@ -45,15 +45,15 @@
                                 <div class="searchMap searchBar">
                                     <input type="search" value="Marseille, France"/>
                                 </div>
-                                <div class="buttonSearch searchBar">
+                                <button class="buttonSearch searchBar">
                                     <i class="fa-solid fa-magnifying-glass iconHidden"></i>
                                     <span class="textHidden">Rechercher</span>
-                                </div>
+                                </button>
                         </div>
                     </form>
                     <div class="filters">
                         
-                        <h2>Filtres</h2>
+                        <h2 class="paddingSpace">Filtres</h2>
                             <ul class="filtersZone">
                                 <li class="filtersButton">
                                     <i class="fa-solid fa-money-bill-wave filtersIcons"></i>
@@ -71,14 +71,15 @@
                                 </li>
 
                                 <li class="filtersButton">
-                                    <i class="fa-solid fa-dog filtersIcons"></i>
+                                    <div class="boxIcon"><i class="fa-solid fa-dog filtersIcons"></i></div>
                                     <a href="#" alt="trier selon acceptation d'animaux de compagnies" class="linkSurvol filtersLink">Animaux Autorisés</a>
                                 </li>
                             </ul>
                     
                     </div>
-                    <div>
-                        <p class="marginZero"><i class="fa-solid fa-info BlueInfobulle buttonInfoBulle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class="infobulle">
+                        <div class="infobulleIcon"><i class="fa-solid fa-info BlueInfobulle buttonInfoBulle"></i></div>
+                        <p class="marginZero">Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
             </section>
             <section id="hebergements">
@@ -87,67 +88,77 @@
                     <div class="galerie">
                         <div class="vignettes">
                             <img src="images/hebergements/4_small/marseilleHebergementsSmallAubergeLaCannebiere.jpg" alt="Photo d'une chambre de l'Auberge La Cannebière" class="imgVignettes"/>
-                            <h3>Auberge La Cannebière</h3>
-                            <p class="textVignettes">Nuit à partir de 25€</p>
-                            <div class="">
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchGrey"></i>
+                            <div class="description">
+                                <h3>Auberge La Cannebière</h3>
+                                <p class="textVignettes">Nuit à partir de 25€</p>
+                                <div class="">
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchGrey"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="vignettes">
                             <img src="images/hebergements/4_small/marseilleHebergementsSmallHotelPort.jpg" alt="Photo d'une chambre de l'Hôtel du port" class="imgVignettes"/>
-                            <h3>Hôtel du port</h3>
-                            <p class="textVignettes">Nuit à partir de 52€</p>
-                            <div class="">
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
+                            <div class="description">
+                                <h3>Hôtel du port</h3>
+                                <p class="textVignettes">Nuit à partir de 52€</p>
+                                <div class="">
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="vignettes">
                             <img src="images/hebergements/4_small/marseilleHebergementsSmallHotelLesMouettes.jpg" alt="Prenez le large au sein de l'hôtel Les Mouettes !" class="imgVignettes"/>
-                            <h3>Hôtel Les Mouettes</h3>
-                            <p class="textVignettes">Nuit à partir de 76€</p>
-                            <div class="">
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchGrey"></i>
+                            <div class="description">
+                                <h3>Hôtel Les Mouettes</h3>
+                                <p class="textVignettes">Nuit à partir de 76€</p>
+                                <div class="">
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchGrey"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="vignettes">
                             <img src="images/hebergements/4_small/marseilleHebergementsSmallHotelMer.jpg" alt="Réservez une chambre de l'hôtel de la mer." class="imgVignettes"/>
-                            <h3>Hôtel de la mer</h3>
+                            <div class="description">
+                                <h3>Hôtel de la mer</h3>
                             <p class="textVignettes">Nuit à partir de 46€</p>
-                            <div class="">
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchGrey"></i>
-                                <i class="fa-solid fa-star switchGrey"></i>
+                                <div class="">
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchGrey"></i>
+                                    <i class="fa-solid fa-star switchGrey"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="vignettes">
                             <img src="images/hebergements/4_small/marseilleHebergementsSmallAubergeLePanier.jpg" alt="Découvrez l'Auberge Le Panier." class="imgVignettes"/>
-                            <h3>Auberge Le Panier</h3>
-                            <p class="textVignettes">Nuit à partir de 23€</p>
-                            <div class="">
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchBlue"></i>
-                                <i class="fa-solid fa-star switchGrey"></i>
-                            </div>
+                            <div class="description">
+                                <h3>Auberge Le Panier</h3>
+                                <p class="textVignettes">Nuit à partir de 23€</p>
+                                <div class="">
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchBlue"></i>
+                                    <i class="fa-solid fa-star switchGrey"></i>
+                                </div>
+                            </div>    
                         </div>
                         <div class="vignettes">
                             <img src="images/hebergements/4_small/marseilleHebergementsSmallHotelChezAmina.jpg" alt="Réservez une chambre Chez Amina." class="imgVignettes"/>
-                            <div class="descriptionText">
+                            <div class="description">
                                 <h3>Hôtel chez Amina</h3>
                                 <p class="textVignettes">Nuit à partir de 96€</p>
                                 <div class="">
@@ -164,7 +175,7 @@
                 </div>
                 <div class="popularity">
                     <div class="arrowPosition">
-                        <h2>Les plus populaires</h2><i class="fa-solid fa-arrow-trend-up arrowPop"></i>
+                        <h2>Les plus populaires</h2><a href="index.html" alt="Les plus fréquentés par nos Bookers"><i class="fa-solid fa-arrow-trend-up arrowPop"></i></a>
                     </div>
                         <div class="galerieColumn">
                             <div class="vignettesColumn">
