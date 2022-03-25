@@ -46,22 +46,36 @@ p, a
     margin: 0;
 }
 
-.marginZero
-{
-    margin: 0;
-}
-
 a
 {
     text-decoration: none;
     color: black;
 }
 
+h2
+{
+    margin: 0;
+}
+
 h3
 {
-    padding: 5px 20px;
     margin: 0;
     text-align: left;
+}
+
+.marginZero
+{
+    margin: 0;
+}
+
+.marginLine
+{
+    margin-bottom: 25px;
+}
+
+.marginBr
+{
+    margin-top: 50px;
 }
 
 .fontBold
@@ -284,37 +298,31 @@ li.filtersButton:hover
 
 #hebergements
 {
-    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
 }
 
 .hebergements
 {
-    width: 70%;
-    padding: 25px;
+    width: 95%;
+    padding: 40px;
     background-color: #F2F2F2;
-    border-radius: 45px;
-}
-
-.paddingTittle
-{
-    padding: 0 0 0 15px;
+    border-radius: 25px;
 }
 
 .popularity
 {
-    padding: 25px;
+    padding: 40px;
     background-color: #F2F2F2;
-    border-radius: 45px;
-    margin-left: 2%;
+    border-radius: 25px;
+    margin-left: 40px;
 }
 .arrowPosition
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 10%;
+    margin-bottom: 25px;
 }
 
 .arrowPop
@@ -327,6 +335,7 @@ li.filtersButton:hover
 .descriptionText
 {
     width: 100%;
+    padding: 11px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -336,15 +345,15 @@ li.filtersButton:hover
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .vignettes
 {
     width: 30%;
     height: 225px;
-    margin: 15px 0;
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
@@ -373,14 +382,15 @@ li.filtersButton:hover
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 90%;
+    min-width: 290px;
 }
 
 .vignettesColumn
 {
-    width: 90%;
-    margin: 15px;
+    width: 100%;
     background-color: #FFFFFF;
     border-radius: 20px;
     display: flex;
@@ -400,7 +410,7 @@ li.filtersButton:hover
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 4px;
-    width: 35%;
+    width: 65%;
     height: 130px;
     object-fit: cover;
 }
@@ -408,14 +418,9 @@ li.filtersButton:hover
 
 .textVignettes
 {
-    padding: 5px 20px;
+    padding: 8px 0;
     margin: 0;
     font-size: 14px;
-}
-
-.notation
-{    
-    padding: 5px 20px 10px;
 }
 
 a.linkSet
@@ -439,13 +444,6 @@ a.linkSet
 /*      SECTION ACTIVITES      */
 /*_____________________________*/
 /*_____________________________*/
-
-
-
-#activities
-{
-    padding: 25px;
-}
 
 .activities
 {
@@ -498,13 +496,13 @@ img.activitesImgSmall
 
 .marginTop
 {
-    margin-top: 10%;
+    margin-top: 25px;
 }
 
 .marginRight
 {
     
-    margin-right: 2%;
+    margin-right: 25px;
 }
 
 /*_____________________________*/
@@ -651,7 +649,7 @@ footer
     .popularity
     {
         width: 100%;
-        margin: 0%;
+        margin: 0;
         background: #F2F2F2;
         border-radius: 0;
     }
@@ -700,10 +698,6 @@ footer
 
     /* SECTION ACTIVITE */
 
-    .galerieActivities
-    {
-    }
-
     .vignetteGalerie
     {
         height: 250px;
@@ -716,11 +710,6 @@ footer
         height: 200px;
         object-fit: cover;
         object-position: center;
-    }
-
-    .marginTop
-    {
-        margin-top: 0;
     }
 
     h3.titresVignetteGalerie
