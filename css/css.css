@@ -318,7 +318,6 @@ input
 /*_____________________________*/
 
 /* BUTON FILTRE */
-
 .testFiltre
 {
     width: fit-content;
@@ -360,7 +359,7 @@ input
     font-weight: bold;
     padding: 0 15px;
 }
-/* End filtre*/
+/* END FILTRE */
 
 .filters
 {
@@ -380,51 +379,6 @@ input
     font-weight: bold;
     padding: 0;
     margin: 0;
-}
-
-.filtersButton
-{   
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 0 15px 0 0;
-    margin: 10px;
-    border: #F2F2F2 solid 3px;
-    border-radius: 50px;
-    color: #0065FC;
-    cursor: pointer;
-}
-
-li.filtersButton:hover
-{
-    color: #0065FC;
-    border: #DEEBFF solid 3px;
-    background-color: #DEEBFF;
-}
-
-.filtersButton:focus
-{
-    color: #FFFFFF;
-    background-color: #DEEBFF;
-}
-
-.boxIcon
-{
-    width: 52px;
-    height: 52px;
-}
-
-.filtersIcons
-{
-    background-color: #DEEBFF;
-    border: 20px #DEEBFF solid;
-    border-radius: 45px;
-    margin: -2px;
-}
-
-.filtersLink
-{
-    padding-left: 15px;
 }
 
 /*_____________________________*/
