@@ -684,9 +684,23 @@ footer
         margin-bottom: 30px;
     }
 
+    nav ul 
+    {
+        justify-content: space-between;
+    }
+
+    
+    .navBar
+    {
+        width: 100%;
+        padding: 0;
+
+    }
+
     li.navButton
     {
         border-bottom: #F2F2F2 2px solid;
+        width: 100%;
     }
 
     li.navButton:hover
@@ -703,7 +717,7 @@ footer
 
     h2
     {
-        margin: 25px 0 0 25px;
+        margin: 25px 0 0 10px;
     }
 
     /*_____SEARCH MOBILE_____*/
