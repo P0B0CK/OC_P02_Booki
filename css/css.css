@@ -701,6 +701,11 @@ footer
         border-bottom: #0065FC 2px solid;
     }
 
+    h2
+    {
+        margin: 25px 0 0 25px;
+    }
+
     /*_____SEARCH MOBILE_____*/
 
 
