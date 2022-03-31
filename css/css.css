@@ -164,7 +164,12 @@ h3
     color: #0065FC;
 }
 
-/* Hebergement Nouveau travail */
+/*_____________________________*/
+/*_____________________________*/
+/*          DESKTOP 1ST        */
+/*      SECTION HEBERGEMENT    */
+/*_____________________________*/
+/*_____________________________*/
 
 #hebergement
 {
@@ -189,6 +194,16 @@ h3
 {
     width: 100%;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrowPop
+{
+    border-left: 3px black solid;
+    border-bottom: 3px black solid;
+    padding: 1px;
 }
 
 .sectionGallery
@@ -260,9 +275,67 @@ h3
     width: 35%;
     margin-left: 40px;
     padding: 40px;
-    background-color: mediumaquamarine;
+    background-color: #F2F2F2;
     border-radius: 25px;
+    display: flex;
+    flex-flow: column nowrap;
 }
+
+.sectionGalleryPop
+{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.galleryCardPop
+{
+    padding: 3px;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: #afafaf 0 1px 10px;
+}
+
+.galleryCardPop:hover
+{
+    box-shadow: 0 1px 10px #0065FC;
+    color: #0065fc;
+    cursor: pointer;
+}
+
+div.cardPicturePop
+{
+    height: 140px;
+}
+
+img.cardPicturePop
+{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.cardDescriptionPop
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardDescriptionPop p
+{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.cardDescriptionPop h3
+{
+    font-size: 17px;
+}
+
 
 
 /*_____________________________*/
@@ -528,12 +601,7 @@ input
     margin-bottom: 25px;
 }
 
-.arrowPop
-{
-    border-left: 3px black solid;
-    border-bottom: 3px black solid;
-    padding: 1px;
-}
+
 
 .description
 {
