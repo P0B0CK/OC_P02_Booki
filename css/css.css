@@ -159,10 +159,111 @@ h3
     font-weight: bold;
 }
 
-.linkSurvol:hover
+.linkBlue:hover
 {
     color: #0065FC;
 }
+
+/* Hebergement Nouveau travail */
+
+#hebergement
+{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.hebergementResult
+{
+    width: 75%;
+    padding: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
+.sectionTitle
+{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.sectionGallery
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.galleryCard
+{
+    width: 31%;
+    padding: 3px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: #afafaf 0 1px 10px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.galleryCard:hover
+{
+    box-shadow: 0 1px 10px #0065FC;
+    color: #0065fc;
+    cursor: pointer;
+}
+
+.cardPicture
+{
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.cardDescription
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardDescription p
+{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.cardDescription h3
+{
+    font-size: 17px;
+}
+
+.sectionText
+{
+    margin: 10px 0;
+}
+
+.sectionText a
+{
+    font-size: 19px;
+}
+
+.hebergementRecommand
+{
+    width: 35%;
+    margin-left: 40px;
+    padding: 40px;
+    background-color: mediumaquamarine;
+    border-radius: 25px;
+}
+
 
 /*_____________________________*/
 /*_____________________________*/
@@ -730,8 +831,6 @@ footer
         margin: 25px 0;
     }
 
-    /*_____SEARCH MOBILE_____*/
-
 
     /* _____FILTRES MOBILES_____*/
 
@@ -833,8 +932,13 @@ footer
 
     p.textVignettes
     {
-        padding-top: 0;
+        padding-top: 5px;
         padding-bottom: 0;
+    }
+
+    img.imgVignettesColumn
+    {
+        width: 40%;
     }
 
     /* SECTION ACTIVITE */
@@ -862,7 +966,7 @@ footer
 
     .descriptionText
     {
-        width: 95%;
+        width: 60%;
     }
 
     .footerContainer
@@ -901,6 +1005,14 @@ footer
         display: none;
     }
 
+/*_____SEARCH MOBILE_____*/
+
+.buttonSearch
+{
+    border-radius: 15px;
+    margin-left: -12px;
+}
+
 /*_____________________________*/
 /*_____________________________*/
 /*          TABLETTE           */
@@ -913,7 +1025,7 @@ footer
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
-        padding: 0 10px;
+        padding: 0 15px;
         background-color: #F2F2F2;
     }
 
@@ -974,7 +1086,7 @@ footer
 
     .vignettesColumn
     {
-        width: 95%;
+        width: 100%;
         margin: 10px 0;
         margin: 0 0 25px 0;
         background-color: #FFFFFF;
