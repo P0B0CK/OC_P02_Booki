@@ -645,10 +645,125 @@ footer
 
 /* ____________________ */
 /* ==================== */
-/*   RESPONSIVE MOBILE  */
+/* RESPONSIVE TABLETTE  */
 /* ==================== */
 /* ____________________ */
 
+
+@media screen and (max-width: 992px)
+{
+
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            TABLETTE         */
+    /*      SECTION HEBERGEMENT    */
+    /*_____________________________*/
+    /*_____________________________*/
+
+    #hebergement
+    {
+        flex-direction: column;
+    }
+
+    .hebergementRecommand
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 25px;
+        border-radius: 0;
+    }
+
+    .sectionTitle h2
+    {
+        margin: 0;
+
+    }
+
+    .sectionTitle
+    {
+        padding: 15px 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .galleryCardPop
+    {
+        margin-bottom: 15px;
+    }
+
+    .hebergementResult
+    {
+        width: auto;
+        margin: 25px 0 0 0;
+        padding: 0 25px;
+        border-radius: 0;
+        background-color: #FFFFFF;
+    }
+
+
+
+    /*_____________________________*/
+    /*_____________________________*/
+    /*          TABLETTE           */
+    /*      SECTION ACTIVITES      */
+    /*_____________________________*/
+    /*_____________________________*/
+
+    #activities
+    {
+        padding: 0 25px;
+    }
+
+    .marginRight
+    {
+        margin: 0;
+    }
+
+    .marginTop
+    {
+        margin-top: 0;
+    }
+
+    .galerieActivities
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .vignetteGalerie
+    {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    img.activitesImg, img.activitesImgSmall
+    {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h3.titresVignetteGalerie
+    {
+        padding: 10%;
+    }
+
+    .descriptionText
+    {
+        width: 60%;
+    }
+
+}
+
+
+
+/* ____________________ */
+/* ==================== */
+/*   RESPONSIVE MOBILE  */
+/* ==================== */
+/* ____________________ */
 
 @media screen and (max-width: 768px)
 {
@@ -831,14 +946,12 @@ footer
         margin: 5px 0;
     }
 
-
     /*_____________________________*/
     /*_____________________________*/
     /*            MOBILE           */
     /*        SECTION ACTIVITE     */
     /*_____________________________*/
     /*_____________________________*/
-
 
     .vignetteGalerie
     {
@@ -884,117 +997,4 @@ footer
         width: auto;
         margin: 25px 0;
     }
-}
-
-
-/* ____________________ */
-/* ==================== */
-/* RESPONSIVE TABLETTE  */
-/* ==================== */
-/* ____________________ */
-
-
-@media screen and (max-width: 992px)
-{
-
-    /*_____________________________*/
-    /*_____________________________*/
-    /*            TABLETTE         */
-    /*      SECTION HEBERGEMENT    */
-    /*_____________________________*/
-    /*_____________________________*/
-
-    #hebergement
-    {
-        flex-direction: column;
-    }
-
-    .hebergementRecommand
-    {
-        width: auto;
-        margin: 0;
-        padding: 0 25px;
-        border-radius: 0;
-    }
-
-    .sectionTitle h2
-    {
-        margin: 0;
-
-    }
-
-    .sectionTitle
-    {
-        padding: 15px 0 0 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .galleryCardPop
-    {
-        margin-bottom: 15px;
-    }
-
-    .hebergementResult
-    {
-        width: auto;
-        margin: 25px 0 0 0;
-        padding: 0 25px;
-        border-radius: 0;
-        background-color: #FFFFFF;
-    }
-
-    /*_____________________________*/
-    /*_____________________________*/
-    /*          TABLETTE           */
-    /*      SECTION ACTIVITES      */
-    /*_____________________________*/
-    /*_____________________________*/
-
-    #activities
-    {
-        padding: 0 25px;
-    }
-
-    .marginRight
-    {
-        margin: 0;
-    }
-
-    .marginTop
-    {
-        margin-top: 0;
-    }
-
-    .galerieActivities
-    {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .vignetteGalerie
-    {
-        width: 100%;
-        height: 250px;
-        margin-bottom: 20px;
-    }
-
-    img.activitesImg, img.activitesImgSmall
-    {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    h3.titresVignetteGalerie
-    {
-        padding: 10%;
-    }
-
-    .descriptionText
-    {
-        width: 60%;
-    }
-
 }
