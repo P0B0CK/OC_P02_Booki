@@ -525,14 +525,10 @@ img.cardPicturePop
 
 /*_____________________________*/
 /*_____________________________*/
+/*          DESKTOP 1ST        */
 /*      SECTION ACTIVITES      */
 /*_____________________________*/
 /*_____________________________*/
-
-#activities
-{
-    margin: 0 25px;
-}
 
 .activities
 {
@@ -567,6 +563,11 @@ img.cardPicturePop
     box-shadow: 0 1px 10px #afafaf;
 }
 
+.vignetteGalerie h3
+{
+    font-size: 14px;
+}
+
 img.activitesImg
 {
     height: 92%;
@@ -596,7 +597,8 @@ img.activitesImgSmall
 
 /*_____________________________*/
 /*_____________________________*/
-/*      SECTION FOOTER         */
+/*         DESKTOP 1ST         */
+/*        SECTION FOOTER       */
 /*_____________________________*/
 /*_____________________________*/
 
@@ -830,7 +832,12 @@ footer
     }
 
 
-    /* SECTION ACTIVITE */
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            MOBILE           */
+    /*        SECTION ACTIVITE     */
+    /*_____________________________*/
+    /*_____________________________*/
 
 
     .vignetteGalerie
@@ -857,6 +864,13 @@ footer
     {
         width: 60%;
     }
+
+    /*_____________________________*/
+    /*_____________________________*/
+    /*          MOBILE             */
+    /*        SECTION FOOTER       */
+    /*_____________________________*/
+    /*_____________________________*/
 
     .footerContainer
     {
@@ -899,7 +913,7 @@ footer
     {
         width: auto;
         margin: 0;
-        padding: 0 10px 0 10px;
+        padding: 0 25px;
         border-radius: 0;
     }
 
@@ -925,9 +939,62 @@ footer
     {
         width: auto;
         margin: 25px 0 0 0;
-        padding: 0 10px 0 10px;
+        padding: 0 25px;
         border-radius: 0;
         background-color: #FFFFFF;
+    }
+
+    /*_____________________________*/
+    /*_____________________________*/
+    /*          TABLETTE           */
+    /*      SECTION ACTIVITES      */
+    /*_____________________________*/
+    /*_____________________________*/
+
+    #activities
+    {
+        padding: 0 25px;
+    }
+
+    .marginRight
+    {
+        margin: 0;
+    }
+
+    .marginTop
+    {
+        margin-top: 0;
+    }
+
+    .galerieActivities
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .vignetteGalerie
+    {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    img.activitesImg, img.activitesImgSmall
+    {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h3.titresVignetteGalerie
+    {
+        padding: 10%;
+    }
+
+    .descriptionText
+    {
+        width: 60%;
     }
 
 }
