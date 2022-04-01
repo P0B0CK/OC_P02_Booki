@@ -1,10 +1,3 @@
-/*_____________________________*/
-/*_____________________________*/
-/*          DESKTOP 1ST        */
-/*        GLOBAL SETTINGS      */
-/*_____________________________*/
-/*_____________________________*/
-
 html
 {
     font-family: 'Raleway', sans-serif;
@@ -257,7 +250,7 @@ input
     background-color: #FFFFFF;
     height: 20px; 
     width: 20px;
-    border-radius:50px;
+    border-radius: 50px;
     padding: 2px 0 0 0;
 }
 
@@ -284,7 +277,6 @@ input
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    border-radius: #e0e0e0 45px solid;
     border: 2px #e0e0e0 solid;
     border-radius: 45px;
     margin: 10px 10px 10px 0;
@@ -295,7 +287,7 @@ input
     cursor: pointer;
     color: #0065FC;
     background: #DEEBFF;
-    border-radius: #DEEBFF 45px solid;
+    border-radius: #DEEBFF 45px;
     border: 2px #DEEBFF solid;
 }
 
@@ -878,7 +870,7 @@ footer
     cursor: pointer;
     color: #0065FC;
     background: #DEEBFF;
-    border-radius: #DEEBFF 45px solid;
+    border-radius: #DEEBFF 45px;
     border: 2px #DEEBFF solid;
 }
 
