@@ -359,7 +359,7 @@ input
 
 .hebergementResult
 {
-    width: 75%;
+    width: 68%;
     padding: 40px;
     display: flex;
     flex-flow: column wrap;
@@ -449,7 +449,6 @@ input
 
 .hebergementRecommand
 {
-    width: 35%;
     margin-left: 40px;
     padding: 40px;
     background-color: #F2F2F2;
@@ -831,7 +830,6 @@ footer
     }
 
 
-
     /* SECTION ACTIVITE */
 
 
@@ -884,5 +882,52 @@ footer
 
 @media screen and (max-width: 992px)
 {
+
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            TABLETTE         */
+    /*      SECTION HEBERGEMENT    */
+    /*_____________________________*/
+    /*_____________________________*/
+
+    #hebergement
+    {
+        flex-direction: column;
+    }
+
+    .hebergementRecommand
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 10px 0 10px;
+        border-radius: 0;
+    }
+
+    .sectionTitle h2
+    {
+        margin: 0;
+
+    }
+
+    .sectionTitle
+    {
+        padding: 15px 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .galleryCardPop
+    {
+        margin-bottom: 15px;
+    }
+
+    .hebergementResult
+    {
+        width: auto;
+        margin: 25px 0 0 0;
+        padding: 0 10px 0 10px;
+        border-radius: 0;
+        background-color: #FFFFFF;
+    }
 
 }
