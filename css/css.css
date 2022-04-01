@@ -1,59 +1,9 @@
 /*_____________________________*/
 /*_____________________________*/
-/*          PRINCIPAL          */
+/*          DESKTOP 1ST        */
+/*        GLOBAL SETTINGS      */
 /*_____________________________*/
 /*_____________________________*/
-
-/* BUTON FILTRE */
-
-.testFiltre
-{
-    width: fit-content;
-    height: 56px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    border-radius: #e0e0e0 45px solid;
-    border: 2px #e0e0e0 solid;
-    border-radius: 45px;
-    margin: 10px;
-}
-
-.testFiltre:hover
-{
-    cursor: pointer;
-    color: #0065FC;
-    background: #DEEBFF;
-    border-radius: #DEEBFF 45px solid;
-    border: 2px #DEEBFF solid;
-}
-
-.testFiltreIcon
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 56px;
-    height: 56px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 50px;
-    border: 2px #DEEBFF solid;
-    margin: -2px;
-}
-
-.testFiltreText
-{
-    font-weight: bold;
-    padding: 0 15px;
-}
-
-/* 
-CHECKER BACKGROUND CODE
-
-background-color: grey;
-border: red 3px solid;
-*/
 
 html
 {
@@ -75,7 +25,8 @@ header, main, footer
 
 /*_____________________________*/
 /*_____________________________*/
-/* GESTION DES TEXTES & TITRES */
+/*         DESKTOP 1ST         */
+/*   GESTION TEXTES & TITRES   */
 /*_____________________________*/
 /*_____________________________*/
 
@@ -95,11 +46,6 @@ a
 {
     text-decoration: none;
     color: black;
-}
-
-h2.recherche
-{
-    font-size: ;
 }
 
 h2
@@ -163,6 +109,237 @@ h3
 {
     color: #0065FC;
 }
+
+/*_____________________________*/
+/*_____________________________*/
+/*          DESKTOP 1ST        */
+/*            HEADER           */
+/*_____________________________*/
+/*_____________________________*/
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    height: 52px;
+}
+
+#logo
+{
+    width: 120px;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navButton
+{
+    height: 20px;
+    width: 150px;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+li.navButton:hover
+{
+    border-top: #0065FC 2px solid;
+}
+
+/*_____________________________*/
+/*_____________________________*/
+/*          DESKTOP 1ST        */
+/*      SECTION RECHERCHE      */
+/*_____________________________*/
+/*_____________________________*/
+
+#recherche
+{
+    margin: 30px 15px;
+}
+
+/* SEARCH BAR */
+
+.search
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.searchBar
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 5px 0 5px;
+}
+
+.iconMap
+{
+    border: #F2F2F2 2px solid;
+    background-color: #F2F2F2;
+    padding: 15px 15px 15px 15px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+.searchMap
+{
+
+    border-top: 1px #F2F2F2;
+    border-bottom: 1px #F2F2F2;
+    padding: 15px 0px 15px 0px;
+    font: bold;
+}
+
+input
+{
+    border: none;
+    border-top: 2px #F2F2F2 solid;
+    border-bottom: 2px #F2F2F2 solid;
+    padding: 15px 0px 15px 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.buttonSearch
+{
+    background-color: #0065FC;
+    border: #0065FC 2px solid;
+    color: #F2F2F2;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 15px 15px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.buttonSearch i
+{
+    display: none;
+}
+
+.iconHidden
+{
+    display: none;
+}
+
+.textHidden
+{
+    display: contents;
+}
+
+/* Infobulle */
+
+.infobulle
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.infobulleIcon
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.buttonInfoBulle
+{
+    border: 2px #F2F2F2 solid;
+    background-color: #FFFFFF;
+    height: 20px; 
+    width: 20px;
+    border-radius:50px;
+    padding: 2px 0 0 0;
+}
+
+.BlueInfobulle
+{
+    color: #0065FC;
+    text-align: center;
+    padding: 3px;
+}
+
+/*_____________________________*/
+/*_____________________________*/
+/*          DESKTOP 1ST        */
+/*        SECTION FILTRES      */
+/*_____________________________*/
+/*_____________________________*/
+
+
+/* BUTON FILTRE */
+.testFiltre
+{
+    width: fit-content;
+    height: 56px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: #e0e0e0 45px solid;
+    border: 2px #e0e0e0 solid;
+    border-radius: 45px;
+    margin: 10px 10px 10px 0;
+}
+
+.testFiltre:hover
+{
+    cursor: pointer;
+    color: #0065FC;
+    background: #DEEBFF;
+    border-radius: #DEEBFF 45px solid;
+    border: 2px #DEEBFF solid;
+}
+
+.testFiltreIcon
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 56px;
+    height: 56px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    border: 2px #DEEBFF solid;
+    margin: -2px;
+}
+
+.testFiltreText
+{
+    font-weight: bold;
+    padding: 0 10px;
+}
+/* END FILTRE */
+
+.filters
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.filtersZone
+{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
 
 /*_____________________________*/
 /*_____________________________*/
@@ -312,6 +489,7 @@ div.cardPicturePop
 
 img.cardPicturePop
 {
+    width: 170px;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
@@ -334,379 +512,6 @@ img.cardPicturePop
 .cardDescriptionPop h3
 {
     font-size: 17px;
-}
-
-
-
-/*_____________________________*/
-/*_____________________________*/
-/*          HEADER             */
-/*_____________________________*/
-/*_____________________________*/
-
-nav
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 50px;
-    height: 52px;
-}
-
-#logo
-{
-    width: 120px;
-}
-
-nav ul
-{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    margin: 0;
-}
-
-.navButton
-{
-    height: 20px;
-    width: 150px;
-    padding: 15px 5px;
-    text-align: center;
-}
-
-li.navButton:hover
-{
-    border-top: #0065FC 2px solid;
-}
-
-/*_____________________________*/
-/*_____________________________*/
-/*      SECTION RECHERCHE      */
-/*_____________________________*/
-/*_____________________________*/
-
-#recherche
-{
-    margin: 30px 15px;
-}
-
-/* SEARCH BAR */
-
-.search
-{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.searchBar
-{
-    font-family: 'Raleway', sans-serif;
-    padding: 0 5px 0 5px;
-}
-
-.iconMap
-{
-    border: #F2F2F2 2px solid;
-    background-color: #F2F2F2;
-    padding: 15px 15px 15px 15px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    
-}
-
-.searchMap
-{
-
-    border-top: 1px #F2F2F2;
-    border-bottom: 1px#F2F2F2;
-    padding: 15px 0px 15px 0px;
-    font: bold;
-}
-
-input
-{
-    border: none;
-    border-top: 2px #F2F2F2 solid;
-    border-bottom: 2px #F2F2F2 solid;
-    padding: 15px 0px 15px 5px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.buttonSearch
-{
-    background-color: #0065FC;
-    border: #0065FC 2px solid;
-    color: #F2F2F2;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 15px 15px 15px 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.buttonSearch i
-{
-    display: none;
-}
-
-.iconHidden
-{
-    display: none;
-}
-
-.textHidden
-{
-    display: contents;
-}
-
-/* Infobulle */
-
-.infobulle
-{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.infobulleIcon
-{
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-}
-
-.buttonInfoBulle
-{
-    border: 2px #F2F2F2 solid;
-    background-color: #FFFFFF;
-    height: 20px; 
-    width: 20px;
-    border-radius:50px;
-    padding: 2px 0 0 0;
-}
-
-.BlueInfobulle
-{
-    color: #0065FC;
-    text-align: center;
-    padding: 3px;
-}
-
-
-/*_____________________________*/
-/*_____________________________*/
-/*          FILTRES            */
-/*_____________________________*/
-/*_____________________________*/
-
-/* BUTON FILTRE */
-.testFiltre
-{
-    width: fit-content;
-    height: 56px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    border-radius: #e0e0e0 45px solid;
-    border: 2px #e0e0e0 solid;
-    border-radius: 45px;
-    margin: 10px 10px 10px 0;
-}
-
-.testFiltre:hover
-{
-    cursor: pointer;
-    color: #0065FC;
-    background: #DEEBFF;
-    border-radius: #DEEBFF 45px solid;
-    border: 2px #DEEBFF solid;
-}
-
-.testFiltreIcon
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 56px;
-    height: 56px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 50px;
-    border: 2px #DEEBFF solid;
-    margin: -2px;
-}
-
-.testFiltreText
-{
-    font-weight: bold;
-    padding: 0 10px;
-}
-/* END FILTRE */
-
-.filters
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
-    margin: 20px 0;
-}
-
-.filtersZone
-{
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-}
-
-/*_____________________________*/
-/*_____________________________*/
-/*      SECTION HEBERGEMENT    */
-/*_____________________________*/
-/*_____________________________*/
-
-#hebergements
-{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 25px;
-}
-
-.hebergements
-{
-    width: 95%;
-    padding: 40px;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-}
-
-.popularity
-{
-    padding: 40px;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    margin-left: 40px;
-}
-.arrowPosition
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-
-
-.description
-{
-    padding: 5px 15px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-
-.descriptionText
-{
-    width: 100%;
-    padding: 11px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-
-.galerie
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.vignettes
-{
-    width: 31%;
-    min-width: 206px;
-    height: 225px;
-    margin-bottom: 20px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    box-shadow: 0 1px 10px #afafaf;
-}
-
-.vignettes:hover
-{
-    box-shadow: 0 1px 10px #0065FC;
-    color: #0065fc;
-    cursor: pointer;
-}
-
-.imgVignettes
-{
-    border-radius: 20px 20px 0 0;
-    height: 120px;
-    padding: 5px;
-    object-fit: cover;
-}
-
-.galerieColumn
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 90%;
-    min-width: 290px;
-}
-
-.vignettesColumn
-{
-    width: 100%;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    display: flex;
-    flex-flow: row nowrap;
-    box-shadow: 0 1px 10px #afafaf;
-}
-
-.vignettesColumn:hover
-{
-    box-shadow: 0 1px 10px #0065FC;
-    color: #0065fc;
-    cursor: pointer;
-}
-
-.imgVignettesColumn
-{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 4px;
-    width: 65%;
-    height: 130px;
-    object-fit: cover;
-}
-
-
-.textVignettes
-{
-    padding: 8px 0;
-    margin: 0;
-    font-size: 14px;
-}
-
-a.linkSet
-{
-    font-weight: bold;
-    padding: 0 15px;
 }
 
 .switchBlue
