@@ -651,6 +651,13 @@ footer
 
 @media screen and (max-width: 768px)
 {
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            MOBILE           */
+    /*        GLOBAL SETTINGS      */
+    /*_____________________________*/
+    /*_____________________________*/
+
     html, body
     {
         width: 100%;
@@ -658,7 +665,12 @@ footer
         font-family: 'Raleway', sans-serif;
     }
 
-    /* Header mobile */
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            MOBILE           */
+    /*            HEADER           */
+    /*_____________________________*/
+    /*_____________________________*/
 
     nav
     {
@@ -701,26 +713,16 @@ footer
 
     h2
     {
-        margin: 25px 0;
+        margin: 25px 0 0 0;
     }
 
 
-    /* _____FILTRES MOBILES_____*/
-
-    .filters
-    {
-        margin: 0 0 25px 0;
-    }
-
-        .alignFilters
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0 25px 0 25px;
-        cursor: pointer;
-    }
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            MOBILE           */
+    /*          RECHERCHE          */
+    /*_____________________________*/
+    /*_____________________________*/
 
     /* SWITCH RECHERCHE TEXTE TO ICON */
 
@@ -743,76 +745,92 @@ footer
         margin: 20px 0;
     }
 
-    #hebergements
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            MOBILE           */
+    /*            FILTERS          */
+    /*_____________________________*/
+    /*_____________________________*/
+
+    .filters
     {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0;
-        padding: 0;
-        
+        margin-top: 0;
     }
 
-    .hebergements
+    .testFiltre:focus-visible
+{
+    cursor: pointer;
+    color: #0065FC;
+    background: #DEEBFF;
+    border-radius: #DEEBFF 45px solid;
+    border: 2px #DEEBFF solid;
+}
+
+    /*_____________________________*/
+    /*_____________________________*/
+    /*            MOBILE           */
+    /*      SECTION HEBERGEMENT    */
+    /*_____________________________*/
+    /*_____________________________*/
+
+    #hebergement
     {
-        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .hebergementRecommand
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 10px 0 10px;
+        border-radius: 0;
+    }
+
+    .sectionTitle h2
+    {
+        margin: 0;
+
+    }
+
+    .sectionTitle
+    {
+        padding: 15px 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .galleryCardPop
+    {
+        margin-bottom: 15px;
+    }
+
+    .hebergementResult
+    {
+        width: auto;
+        margin: 25px 0 0 0;
+        padding: 0 10px 0 10px;
         border-radius: 0;
         background-color: #FFFFFF;
     }
 
-    .popularity
-    {
-        width: 100%;
-        margin: 0;
-        background: #F2F2F2;
-        border-radius: 0;
-    }
-
-    
-
-    /* SECTION HEBERGEMENT */
-
-    .galerie
+    .sectionGallery
     {
         flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
+        width: auto;
     }
 
-    .galerieColumn
+    .galleryCard
     {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
+        width: auto;
+        margin-bottom: 15px;
     }
 
-    .vignettesColumn
+    .galleryCard p
     {
-        width: 90%;
+        margin: 5px 0;
     }
 
-    .vignettes
-    {
-        width: 100%;
-        height: auto;
-    }
 
-    img.imgVignettes
-    {
-        height: 175px;
-        object-fit: cover;
-        object-position: center right;
-    }
-
-    p.textVignettes
-    {
-        padding-top: 5px;
-        padding-bottom: 0;
-    }
-
-    img.imgVignettesColumn
-    {
-        width: 40%;
-    }
 
     /* SECTION ACTIVITE */
 
@@ -867,147 +885,4 @@ footer
 @media screen and (max-width: 992px)
 {
 
-    /* SWITCH RECHERCHE TEXTE TO ICON */
-    .buttonSearch i
-    {
-        display: block;
-    }
-
-    .textHidden
-    {
-        display: none;
-    }
-
-/*_____SEARCH MOBILE_____*/
-
-.buttonSearch
-{
-    border-radius: 15px;
-    margin-left: -12px;
-}
-
-/*_____________________________*/
-/*_____________________________*/
-/*          TABLETTE           */
-/*      SECTION HEBERGEMENT    */
-/*_____________________________*/
-/*_____________________________*/
-
-    #hebergements
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        padding: 0 15px;
-        background-color: #F2F2F2;
-    }
-
-    .hebergements
-    {
-        width: 100%;
-        padding: 0;
-        border-radius: 0%;
-        background-color: #FFFFFF;
-    }
-
-    .popularity
-    {
-        width: 100%;
-        border-radius: 0%;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-    }
-
-    .marginRight
-    {
-        margin-right: 0;
-    }
-
-    .galerie
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .vignettes
-    {
-        background-color: #FFFFFF;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 1px 10px #afafaf;
-    }
-
-    .imgVignettes
-    {
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        height: 130px;
-        object-fit: cover;
-    }
-
-    .galerieColumn
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .vignettesColumn
-    {
-        width: 100%;
-        margin: 10px 0;
-        margin: 0 0 25px 0;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-        display: flex;
-        flex-flow: row nowrap;
-        box-shadow: 0 1px 10px #afafaf;
-    }
-
-    .imgVignettesColumn
-    {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        width: 35%;
-        height: 130px;
-        padding: 4px;
-        object-fit: cover;
-    }
-
-    .switchBlue
-    {
-        color: #0065FC;
-    }
-
-    .switchGrey
-    {
-        color: #e0e0e0;
-    }
-
-/*_____________________________*/
-/*_____________________________*/
-/*          TABLETTE           */
-/*      SECTION ACTIVITIE      */
-/*_____________________________*/
-/*_____________________________*/
-
-    .galerieActivities
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        border-radius: 0%;
-        background-color: #ffffff;
-    }
-
-    .columnGalerie
-    {
-        width: 90%;
-    }
 }
