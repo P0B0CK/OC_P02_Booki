@@ -332,7 +332,7 @@ input
 #hebergement
 {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -341,7 +341,6 @@ input
 .hebergementResult
 {
     width: 68%;
-    margin-bottom: 25px;
     padding: 40px;
     display: flex;
     flex-flow: column wrap;
@@ -556,6 +555,13 @@ img.cardPicturePop
     height: 100%;
     border-radius: 20px;
     box-shadow: 0 1px 10px #afafaf;
+}
+
+.vignetteGalerie:hover
+{   
+    box-shadow: 0 1px 10px #0065FC;
+    color: #0065fc;
+    cursor: pointer;
 }
 
 .vignetteGalerie h3
@@ -788,6 +794,11 @@ footer
     /*_____________________________*/
     /*_____________________________*/
 
+    h1
+    {
+        padding-left: 30px;
+    }
+
     nav
     {
         display: flex;
@@ -813,6 +824,7 @@ footer
     {
         border-bottom: #F2F2F2 2px solid;
         width: 100%;
+        padding: 10px 5px;
     }
 
     li.navButton:hover
@@ -874,12 +886,12 @@ footer
     }
 
     .testFiltre:focus-visible
-{
-    cursor: pointer;
-    color: #0065FC;
-    background: #DEEBFF;
-    border: 2px #DEEBFF solid;
-}
+    {
+        cursor: pointer;
+        color: #0065FC;
+        background: #DEEBFF;
+        border: 2px #DEEBFF solid;
+    }
 
     /*_____________________________*/
     /*_____________________________*/
@@ -891,6 +903,7 @@ footer
     #hebergement
     {
         flex-direction: column-reverse;
+        margin-bottom: 15px;
     }
 
     .hebergementRecommand
