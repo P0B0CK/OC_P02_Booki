@@ -39,7 +39,7 @@ a
 {
     text-decoration: none;
     color: black;
-}
+}*
 
 h2
 {
@@ -126,7 +126,7 @@ nav ul
 {
     height: 20px;
     width: 150px;
-    padding: 15px 5px;
+    padding: 19px 5px;
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ li.navButton:hover
 
 #recherche
 {
-    margin: 0 15px 30px 15px;
+    margin: 30px 15px 30px 15px;
 }
 
 /* SEARCH BAR */
@@ -865,6 +865,11 @@ footer
     }
 
     /* --- MAIN MOBILE --- */
+
+    #recherche
+    {
+        margin: 0 15px 30px 15px;
+    }
 
     .recherche
     {
