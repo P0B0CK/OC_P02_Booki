@@ -55,7 +55,7 @@ h3
 
 .vignetteGalerie h3
 {
-    padding: 15px 0 0 15px;
+    padding: 10px 0 0 15px;
 }
 
 .marginZero
@@ -548,7 +548,7 @@ img.cardPicturePop
 
 .columnSplitGalerie
 {
-    height: 50%;
+    height: 53%;
 }
 
 .vignetteGalerie
@@ -612,7 +612,6 @@ footer
 
 .footerContainer
 {
-    width: 95%;
     display: flex;
     justify-content: space-between;
 }
@@ -735,6 +734,7 @@ footer
     {
         flex-direction: column;
         width: 100%;
+        max-height: none;
     }
 
     .vignetteGalerie
